@@ -2,6 +2,14 @@
 
 Path planning and simulation for a truck with multiple trailers in a 2D obstacle environment. The project implements **A\*** and **RRT** (Rapidly-exploring Random Trees) planners to find collision-free paths from a start pose to a goal pose, with visualization via Pygame.
 
+## Demo
+
+**Final project video** — path planning and execution in the parking environment:
+
+<video src="Final_Project_Video.mp4" controls width="640">
+  Your browser does not support the video tag. You can <a href="Final_Project_Video.mp4">download the video</a> instead.
+</video>
+
 ## Features
 
 - **Multi-trailer kinematics**: Truck plus configurable number of trailers with realistic dynamics (velocity, steering, trailer coupling).
@@ -20,7 +28,13 @@ Path planning and simulation for a truck with multiple trailers in a 2D obstacle
 | `utils.py` | Helpers: cost-to-go (Reeds–Shepp + trailer terms), `blitRotate` for drawing, control matrix generation. |
 | `A_star.py` | A\* planner: forward simulation, node expansion, path extraction and visualization. |
 | `RRT.py` | RRT planner: sampling, nearest neighbor, steering, tree growth, path extraction. |
-| `truck.png`, `trailer.png` | Sprites for truck and trailer. |
+| `truck.png`, `trailer.png` | Sprites for truck and trailer (see below). |
+
+**Vehicle sprites used in the simulation:**
+
+| Truck | Trailer |
+|-------|---------|
+| ![Truck sprite](truck.png) | ![Trailer sprite](trailer.png) |
 
 ## Requirements
 
@@ -104,5 +118,5 @@ This project is licensed under the GNU General Public License v3.0. See the [LIC
 
 ## Related Files
 
-- `Trailer_Parking_Project_report.pdf` — Project report.
-- `Final_Project_Video.mp4` — Demo video.
+- [Trailer_Parking_Project_report.pdf](Trailer_Parking_Project_report.pdf) — Project report.
+- [Final_Project_Video.mp4](Final_Project_Video.mp4) — Demo video (also embedded in the [Demo](#demo) section above).
